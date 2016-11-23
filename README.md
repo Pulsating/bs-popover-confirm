@@ -2,7 +2,7 @@
 
 It used for second confirmation, based on BootstrapJS's popover component.When user click 'Ok' button, the Ajax will be triggered.
 
-Talk is cheap, show you the [example](http://htmlpreview.github.io/?https://github.com/Pulsating/transfer/blob/master/src/example.html).
+Talk is cheap, show you the [example](http://htmlpreview.github.io/?https://github.com/Pulsating/bs-popover-confirm/blob/master/src/example.html).
 
 ### What's required
 
