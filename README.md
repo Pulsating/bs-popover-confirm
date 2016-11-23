@@ -1,6 +1,8 @@
-# [bs-popover-confirm](http://htmlpreview.github.io/?https://github.com/Pulsating/bs-popover-confirm/blob/master/src/example.html)
+# bs-popover-confirm
 
 It used for second confirmation, based on BootstrapJS's popover component.When user click 'Ok' button, the Ajax will be triggered.
+
+Talk is cheap, show you the [example](http://htmlpreview.github.io/?https://github.com/Pulsating/transfer/blob/master/src/example.html).
 
 ### What's required
 
@@ -9,7 +11,7 @@ It used for second confirmation, based on BootstrapJS's popover component.When u
 
 ### What's included
 
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+Within the download you'll find the following directories and files. You'll see something like this:
 
 ```
 bs-popover-confirm/
