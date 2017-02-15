@@ -1,23 +1,15 @@
-var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
     context: __dirname + "/src/js",
-	entry: './example.js',
+	entry: './demo.js',
 	output: {
 		path: __dirname + '/dist/',
-		filename: 'example.build.js',
+		filename: 'demo.build.js',
 		chunkFilename: '[id].build.js'
 	},
 	devtool: 'eval',
-	plugins: [
-		new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            },
-            comments:false
-        })
-	],
+	plugins: [],
 	resolve: {
         root: [
         	path.resolve('src/js'),

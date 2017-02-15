@@ -27,21 +27,20 @@ vm = avalon.define({
         }
     ],
     showUpdateStatusConfirm: function( e, index, data ) {
-        e.stopPropagation();
-        Status.show( $(this), index, data );
+        Status.show( e, index, data );
     }
 });
 
 // 状态
 Status = {
-    show: function( $trigger, index, data ) {
+    show: function( e, index, data ) {
         var _this = this;
         
         PopoverConfirm.init({
+            e: e,
             UID: data.id + 'status', // 数据中唯一标识符，比如 ID，UserID 等，以确保重复点击显示、隐藏不会闪烁
             title: '确定'+ (data.status ? '启用' : '禁用') +'？',
             loadingContent: (data.status ? '启用生效' : '禁用生效') + '中.........', // Popover 加载中提示文字
-            $trigger: $trigger, // 触发者
             ajax: {
                 config: {
                     type: 'post',

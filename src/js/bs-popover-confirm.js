@@ -10,6 +10,7 @@ define(function() {
 	'use strict';
 
 	var _options = {
+			e: null,
 			UID: '', // 唯一识别符，比如 ID，UserID 等，以确保重复点击显示、隐藏不会闪烁
 			title: '提示', // 标题
 			loadingContent: '努力加载中...', // ajax 加载中提示语
@@ -123,6 +124,9 @@ define(function() {
 	 */
 	function init( options ) {
 		var isNewUID = (_options.UID !== options.UID);
+
+		options.e.stopPropagation();
+		options.$trigger = $(options.e.currentTarget);
 
 		destroy();
 
